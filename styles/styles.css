@@ -1,0 +1,220 @@
+/* General Styles  */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+/* Body Styles */
+
+body {
+    background-color: #C5E4E7;
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+
+/* Main Area */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    background-color: #F3F8FB;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+
+.calculation-section {
+    padding: 0 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.calculation-section h3 {
+    color: #29C2AD;
+    padding: .5rem 0;
+}
+
+.bill-amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1rem;
+}
+
+.bill-amount input {
+    width: 6rem;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.tip-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: .75rem;
+    margin: 1.5rem 0;
+}   
+
+.tip-selection h3 { 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1fr;
+}
+
+.tip-selection button {
+    padding: .25rem;
+    border-radius: .25rem;
+    border: none;
+    background-color: #00474B;
+    color: #fff;
+}
+
+.tip-selection button:focus {
+    background-color: #26C2AD;
+    color: #00474B;
+}
+
+.tip-selection button:nth-child(7) {
+    background-color: transparent;
+    color: #A0BCBD;
+}
+
+.tip-selection input {
+    border: none;
+    width: 6rem;
+    text-align: center;
+    border-radius: .25rem;
+}
+
+.number-of-people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1rem;
+}
+
+.number-of-people input {
+    width: 6rem;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+.totals-section {
+    background-color: #00474B;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tip-amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totals-section h3 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.totals-section h3 span {
+    font-size: .65rem;
+    color: #fff;
+}
+
+.calculated-tip, .calculated-total {
+    font-size: 2rem;
+    color: #29C2AD;
+}
+
+.total-amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totals-section button {
+    margin-top: auto;
+    background-color: #26C2AD;
+    border: none;
+    border-radius: .25rem;
+    color: #00474B;
+    padding: .3rem;
+}
+
+.totals-section button:active { 
+    box-shadow: inset 0 0 .15rem #000;
+}
+
+
+/* Media Quries  */
+
+@media only screen and (max-width: 375px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        background-color: #F3F8FB;
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
