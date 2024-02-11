@@ -153,8 +153,9 @@ input::-webkit-inner-spin-button {
 }
 
 .totals-section h3 span {
-    font-size: .65rem;
-    color: #fff;
+    font-size: .55rem;
+    color: #26C2AD;
+    font-style: italic;
 }
 
 .calculated-tip, .calculated-total {
@@ -183,24 +184,87 @@ input::-webkit-inner-spin-button {
 }
 
 
+
 /* Media Quries  */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
 
     body {
         align-items: flex-start;
     }
 
+
+    .logo {
+        margin: 2rem 0;
+    }
+
     .container {
         display: grid;
+        margin: auto;
+        padding: 1rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: center;
-        background-color: #F3F8FB;
-        border-radius: 1rem;
-        padding: 2rem;
+        grid-template-rows: 1fr auto;
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        /* padding: 2rem; */
     }
+
+    .calculation-section {
+        padding: 0 0 1.5rem 0;
+    }
+
+    .calculation-section h3 {
+        font-size: .75rem;
+    }
+
+    .tip-selection {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto auto;
+        gap: .5rem;
+        margin: .75rem 0;
+    }  
+
+    .tip-selection h3 { 
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 1fr;
+    }
+
+
+    .tip-selection button {
+        font-size: 1rem;
+        padding: .35rem 0;
+    }
+
+    .totals-section {
+        padding: 1rem;
+    }
+
+    .totals-section h3 {
+        font-size: .75rem;
+        padding: .5rem 0;
+    }
+
+    .totals-section h3 span {
+        font-size: .5rem;
+    }
+
+    .calculated-tip, .calculated-total {
+        font-size: 1.25rem;
+    }
+
+    .totals-section button {
+        margin-top: 1rem;
+    }
+
+
+
+
   }
+
+
+
 
 
 
